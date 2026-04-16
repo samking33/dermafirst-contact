@@ -1,0 +1,20 @@
+
+import React from 'react';
+import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop.jsx';
+import Header from './components/Header.jsx';
+import HomePage from './pages/HomePage.jsx';
+
+function App() {
+  return (
+    <Router>
+      <ScrollToTop />
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
