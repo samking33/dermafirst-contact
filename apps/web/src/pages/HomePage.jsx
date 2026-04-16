@@ -48,42 +48,6 @@ const HomePage = () => {
       </Helmet>
 
       <div className="min-h-screen bg-background">
-        {/* Hero Section */}
-        <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <img 
-              src="https://images.unsplash.com/photo-1616391182219-e080b4d1043a" 
-              alt="Moderne dermatologische Praxis mit hochwertiger Ausstattung"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/70 to-background/90"></div>
-          </div>
-          
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
-          >
-            <h1 
-              className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-foreground mb-7 leading-tight"
-              style={{ letterSpacing: '-0.02em', textBalance: 'balance' }}
-            >
-              dermafirst.de
-            </h1>
-            <p className="text-2xl md:text-3xl text-foreground/90 mb-10 max-w-3xl mx-auto leading-relaxed">
-              Ihre vertrauensvolle Adresse fuer professionelle Dermatologie und moderne Hautpflege in Sulzbach.
-            </p>
-            <Button 
-              size="lg" 
-              className="text-xl px-10 py-7 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
-              asChild
-            >
-              <a href="#contact">Jetzt Kontakt aufnehmen</a>
-            </Button>
-          </motion.div>
-        </section>
-
         {/* Instagram Section */}
         <section className="py-20 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
